@@ -23,6 +23,10 @@ section:not(#home) {
   margin: 120px 0;
 }
 
+section#sales {
+  margin-bottom: 0;
+}
+
 .navbar-nav .nav-item a::before {
   background: #ed6d75 !important;
 }
@@ -622,6 +626,10 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sticky .navbar {
     padding: 15px 0;
+  }
+
+  .features__title, .testimonial__header, .feature-extended-section__title {
+    font-size: 2rem;
   }
 }
 
@@ -1243,6 +1251,13 @@ p {
   padding: 30px;
 }
 
+@media only screen and (min-width: 992px) {
+  .testimonial__title {
+    height: 9rem;
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .feature-extended-section .single-feature-extended {
     padding: 30px 10px;
@@ -1318,8 +1333,8 @@ p {
 }
 
 .testimonial__title {
+  margin-bottom: 1rem;
   color: #424242;
-  height: 9rem;
 }
 
 .accordion-button, .accordion-body {
