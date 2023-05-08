@@ -19,6 +19,14 @@ html {
   overflow-x: hidden;
 }
 
+section:not(#home) {
+  margin: 120px 0;
+}
+
+.navbar-nav .nav-item a::before {
+  background: #ed6d75 !important;
+}
+
 body {
   font-family: Arimo;
   font-weight: normal;
@@ -282,7 +290,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #5864FF;
+  background: #ef3945ff !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1314,16 +1322,35 @@ p {
   height: 9rem;
 }
 
+.accordion-button, .accordion-body {
+  padding: 1rem 0;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .feature-extended-section__title {
     font-size: 2rem;
   }
 
-  .features__title {
+  .faq__title {
+    font-size: 1.75rem;
+  }
+
+  .features__title, .testimonial__header {
     font-size: 1.5rem;
   }
 
-  .testimonial__title {
+  .testimonial__title, .faq__subtitle {
     font-size: 1.125rem;
     height: auto;
   }
@@ -1403,7 +1430,7 @@ p {
 
 /* ======= footer css ======= */
 .footer {
-  background-image: url("../img/footer/footer-bg.svg");
+  background-image: url("../img/footer/footer-bg-2.svg");
   background-size: cover;
   background-position: top right;
   padding-top: 260px;
@@ -1419,7 +1446,7 @@ p {
 @media (max-width: 767px) {
   .footer {
     padding-top: 120px;
-    background: #5864FF;
+    background: #ef3945ff;
   }
 }
 
